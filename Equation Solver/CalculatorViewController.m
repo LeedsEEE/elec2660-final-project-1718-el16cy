@@ -116,6 +116,10 @@
         double Root_2 = ( -self.b - sqrt( self.b*self.b - 4*self.a*self.c ) ) / (2*self.a);
         return Root_2;
     }
+    
+    
+    
+    
      else {
          double Root_2 = (-self.b/(2*self.a));
          return Root_2;
@@ -130,12 +134,20 @@
     self.c =[ self.cTextField.text doubleValue];
    
     if (self.b*self.b - 4*self.a*self.c > 0) {
-        self.RootLabel1.text = [NSString stringWithFormat:@"Root 1 \n %.3lf ",self._Root1];
-        self.RootLabel2.text = [NSString stringWithFormat:@"Root 2 \n %.3lf ",self._Root2];
+        self.RootLabel2.text = [NSString stringWithFormat:@"Root 1 \n %.2lf ",self._Root1];
+        self.RootLabel1.text = [NSString stringWithFormat:@"Root 2 \n %.2lf ",self._Root2];
     }
+    
+    else if (self.b*self.b - 4*self.a*self.c == 0) {
+       
+        self.RootLabel2.text = [NSString stringWithFormat:@"Root 1 \n %.2lf ",self._Root1];
+        self.RootLabel1.text = [NSString stringWithFormat:@"Root 2 \n %.2lf ",self._Root2];
+        
+        }
+    
     else {
-    self.RootLabel1.text = [NSString stringWithFormat:@"Root 1 \n %.3lf +%.3lf i",self._Root1,self.Root1ima];
-    self.RootLabel2.text = [NSString stringWithFormat:@"Root 2 \n %.3lf %.3lf i",self._Root2,self.Root2ima];
+    self.RootLabel2.text = [NSString stringWithFormat:@"Root 1 \n %.2lf +%.3lf i",self._Root1,self.Root1ima];
+    self.RootLabel1.text = [NSString stringWithFormat:@"Root 2 \n %.2lf %.3lf i",self._Root2,self.Root2ima];
 
     }
 }
