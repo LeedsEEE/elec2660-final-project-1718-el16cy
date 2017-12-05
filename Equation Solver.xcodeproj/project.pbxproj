@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		23187BB91FCDB0DC0063F54C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 23187BB81FCDB0DC0063F54C /* AppDelegate.m */; };
-		23187BBC1FCDB0DC0063F54C /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23187BBB1FCDB0DC0063F54C /* FirstViewController.m */; };
-		23187BBF1FCDB0DC0063F54C /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23187BBE1FCDB0DC0063F54C /* SecondViewController.m */; };
+		23187BBC1FCDB0DC0063F54C /* CalculatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23187BBB1FCDB0DC0063F54C /* CalculatorViewController.m */; };
+		23187BBF1FCDB0DC0063F54C /* GraphViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23187BBE1FCDB0DC0063F54C /* GraphViewController.m */; };
 		23187BC21FCDB0DC0063F54C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23187BC01FCDB0DC0063F54C /* Main.storyboard */; };
 		23187BC41FCDB0DC0063F54C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23187BC31FCDB0DC0063F54C /* Assets.xcassets */; };
 		23187BC71FCDB0DC0063F54C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23187BC51FCDB0DC0063F54C /* LaunchScreen.storyboard */; };
@@ -39,10 +39,10 @@
 		23187BB41FCDB0DC0063F54C /* Equation Solver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Equation Solver.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		23187BB71FCDB0DC0063F54C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		23187BB81FCDB0DC0063F54C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		23187BBA1FCDB0DC0063F54C /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		23187BBB1FCDB0DC0063F54C /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		23187BBD1FCDB0DC0063F54C /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		23187BBE1FCDB0DC0063F54C /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		23187BBA1FCDB0DC0063F54C /* CalculatorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalculatorViewController.h; sourceTree = "<group>"; };
+		23187BBB1FCDB0DC0063F54C /* CalculatorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculatorViewController.m; sourceTree = "<group>"; };
+		23187BBD1FCDB0DC0063F54C /* GraphViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GraphViewController.h; sourceTree = "<group>"; };
+		23187BBE1FCDB0DC0063F54C /* GraphViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GraphViewController.m; sourceTree = "<group>"; };
 		23187BC11FCDB0DC0063F54C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		23187BC31FCDB0DC0063F54C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23187BC61FCDB0DC0063F54C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -106,10 +106,10 @@
 			children = (
 				23187BB71FCDB0DC0063F54C /* AppDelegate.h */,
 				23187BB81FCDB0DC0063F54C /* AppDelegate.m */,
-				23187BBA1FCDB0DC0063F54C /* FirstViewController.h */,
-				23187BBB1FCDB0DC0063F54C /* FirstViewController.m */,
-				23187BBD1FCDB0DC0063F54C /* SecondViewController.h */,
-				23187BBE1FCDB0DC0063F54C /* SecondViewController.m */,
+				23187BBA1FCDB0DC0063F54C /* CalculatorViewController.h */,
+				23187BBB1FCDB0DC0063F54C /* CalculatorViewController.m */,
+				23187BBD1FCDB0DC0063F54C /* GraphViewController.h */,
+				23187BBE1FCDB0DC0063F54C /* GraphViewController.m */,
 				23187BC01FCDB0DC0063F54C /* Main.storyboard */,
 				23187BC31FCDB0DC0063F54C /* Assets.xcassets */,
 				23187BC51FCDB0DC0063F54C /* LaunchScreen.storyboard */,
@@ -270,10 +270,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23187BBF1FCDB0DC0063F54C /* SecondViewController.m in Sources */,
+				23187BBF1FCDB0DC0063F54C /* GraphViewController.m in Sources */,
 				23187BB91FCDB0DC0063F54C /* AppDelegate.m in Sources */,
 				23187BCA1FCDB0DC0063F54C /* main.m in Sources */,
-				23187BBC1FCDB0DC0063F54C /* FirstViewController.m in Sources */,
+				23187BBC1FCDB0DC0063F54C /* CalculatorViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

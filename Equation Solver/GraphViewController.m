@@ -6,13 +6,13 @@
 //  Copyright © 2017 University of Leeds. All rights reserved.
 //
 
-#import "SecondViewController.h"
+#import "GraphViewController.h"
 
-@interface SecondViewController ()
+@interface GraphViewController ()
 
 @end
 
-@implementation SecondViewController
+@implementation GraphViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
