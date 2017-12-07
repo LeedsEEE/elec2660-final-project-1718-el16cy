@@ -20,6 +20,8 @@
 @synthesize cTextField;
 
 
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
@@ -36,6 +38,9 @@
 }
 
 #pragma UITextFieldDelegate Method
+
+// Tried to add a label showing "invalid text" underneath each Text field, but seems the code is not working
+
 - (BOOL)textfield:(UITextField *)textField shouldChangeCharacterInRange:(NSRange)range repacementstring:(NSString *)string
 {
     if (string.intValue || [string isEqualToString:@"0"] || [string isEqualToString:@""] || [string isEqualToString:@"n/"])
@@ -55,8 +60,9 @@
     
     [View addSubview:View];
     
-    return NO;
+    return YES;
 }
+
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
@@ -68,6 +74,8 @@
 {
     [self.view endEditing:YES];
 }
+
+// Using standard foemulae to get the Roots for quadratic equations
 
 - (double)_Root1
 {
@@ -84,6 +92,21 @@
     
 }
 
+-(double) _Root2
+{
+    if (self.b*self.b - 4*self.a*self.c > 0)
+    {
+        double Root_2 = ( -self.b - sqrt( self.b*self.b - 4*self.a*self.c ) ) / (2*self.a);
+        return Root_2;
+    }
+    else {
+        double Root_2 = (-self.b/(2*self.a));
+        return Root_2;
+    }
+}
+
+// xcode will not display the roots when the roots are imaginary , so I added two more calculations only for imaginary part of the roots down below
+
 - (double) Root1ima
 {
     
@@ -98,33 +121,15 @@
 
 - (double) Root2ima
 {
-    
-    if (self.b*self.b - 4*self.a*self.c < 0) {
-        double Root2_ima = ( - sqrt(4*self.a*self.c - self.b*self.b ) );
-        return Root2_ima;
+        if (self.b*self.b - 4*self.a*self.c < 0) {
+             double Root2_ima = ( - sqrt(4*self.a*self.c - self.b*self.b ) );
+             return Root2_ima;
     }
-    else {
-        return FALSE;
+        else {
+             return FALSE;
     }
 }
 
-
--(double) _Root2
-{
-     if (self.b*self.b - 4*self.a*self.c > 0)
-        {
-        double Root_2 = ( -self.b - sqrt( self.b*self.b - 4*self.a*self.c ) ) / (2*self.a);
-        return Root_2;
-    }
-    
-    
-    
-    
-     else {
-         double Root_2 = (-self.b/(2*self.a));
-         return Root_2;
-     }
-}
 
 - (IBAction)get_abc:(id)sender {
     
@@ -133,10 +138,17 @@
     self.b =[ self.bTextField.text doubleValue];
     self.c =[ self.cTextField.text doubleValue];
    
+
+    //using a if statement when there are different types of roots
+
+   // when equation has possitive roots
+    
     if (self.b*self.b - 4*self.a*self.c > 0) {
         self.RootLabel2.text = [NSString stringWithFormat:@"Root 1 \n %.2lf ",self._Root1];
         self.RootLabel1.text = [NSString stringWithFormat:@"Root 2 \n %.2lf ",self._Root2];
     }
+    
+   // when the equation has two equal roots
     
     else if (self.b*self.b - 4*self.a*self.c == 0) {
        
@@ -144,10 +156,21 @@
         self.RootLabel1.text = [NSString stringWithFormat:@"Root 2 \n %.2lf ",self._Root2];
         
         }
+ 
+ // when the equation only has imaginary roots, in order to not display the real part (because it is equal to 0), I put an extra if statement here ,
     
+    else if (self.b*self.b  == 0) {
+        
+        self.RootLabel2.text = [NSString stringWithFormat:@"Root 1 \n +%.3lf i",self.Root1ima];
+        self.RootLabel1.text = [NSString stringWithFormat:@"Root 2 \n  %.3lf i",self.Root2ima];
+
+    }
+  
+  //when the roots are imaginary
     else {
-    self.RootLabel2.text = [NSString stringWithFormat:@"Root 1 \n %.2lf +%.3lf i",self._Root1,self.Root1ima];
-    self.RootLabel1.text = [NSString stringWithFormat:@"Root 2 \n %.2lf %.3lf i",self._Root2,self.Root2ima];
+    
+        self.RootLabel2.text = [NSString stringWithFormat:@"Root 1 \n %.2lf +%.3lf i",self._Root1,self.Root1ima];
+        self.RootLabel1.text = [NSString stringWithFormat:@"Root 2 \n %.2lf %.3lf i",self._Root2,self.Root2ima];
 
     }
 }

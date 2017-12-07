@@ -16,6 +16,11 @@
 		23187BCA1FCDB0DC0063F54C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 23187BC91FCDB0DC0063F54C /* main.m */; };
 		23187BD41FCDB0DC0063F54C /* Equation_SolverTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 23187BD31FCDB0DC0063F54C /* Equation_SolverTests.m */; };
 		23187BDF1FCDB0DC0063F54C /* Equation_SolverUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 23187BDE1FCDB0DC0063F54C /* Equation_SolverUITests.m */; };
+		2380D8551FD8A18B0013756A /* BEMLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 2380D84B1FD8A18B0013756A /* BEMLine.m */; };
+		2380D8561FD8A18B0013756A /* BEMAverageLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 2380D84F1FD8A18B0013756A /* BEMAverageLine.m */; };
+		2380D8571FD8A18B0013756A /* BEMPermanentPopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2380D8511FD8A18B0013756A /* BEMPermanentPopupView.m */; };
+		2380D8581FD8A18B0013756A /* BEMCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 2380D8521FD8A18B0013756A /* BEMCircle.m */; };
+		2380D8591FD8A18B0013756A /* BEMSimpleLineGraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2380D8531FD8A18B0013756A /* BEMSimpleLineGraphView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +59,16 @@
 		23187BDA1FCDB0DC0063F54C /* Equation SolverUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Equation SolverUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		23187BDE1FCDB0DC0063F54C /* Equation_SolverUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Equation_SolverUITests.m; sourceTree = "<group>"; };
 		23187BE01FCDB0DC0063F54C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2380D84B1FD8A18B0013756A /* BEMLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMLine.m; sourceTree = "<group>"; };
+		2380D84C1FD8A18B0013756A /* BEMCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMCircle.h; sourceTree = "<group>"; };
+		2380D84D1FD8A18B0013756A /* BEMSimpleLineGraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMSimpleLineGraphView.h; sourceTree = "<group>"; };
+		2380D84E1FD8A18B0013756A /* BEMPermanentPopupView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMPermanentPopupView.h; sourceTree = "<group>"; };
+		2380D84F1FD8A18B0013756A /* BEMAverageLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMAverageLine.m; sourceTree = "<group>"; };
+		2380D8501FD8A18B0013756A /* BEMLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMLine.h; sourceTree = "<group>"; };
+		2380D8511FD8A18B0013756A /* BEMPermanentPopupView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMPermanentPopupView.m; sourceTree = "<group>"; };
+		2380D8521FD8A18B0013756A /* BEMCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMCircle.m; sourceTree = "<group>"; };
+		2380D8531FD8A18B0013756A /* BEMSimpleLineGraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMSimpleLineGraphView.m; sourceTree = "<group>"; };
+		2380D8541FD8A18B0013756A /* BEMAverageLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMAverageLine.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +119,7 @@
 		23187BB61FCDB0DC0063F54C /* Equation Solver */ = {
 			isa = PBXGroup;
 			children = (
+				2380D84A1FD8A18B0013756A /* Classes */,
 				23187BB71FCDB0DC0063F54C /* AppDelegate.h */,
 				23187BB81FCDB0DC0063F54C /* AppDelegate.m */,
 				23187BBA1FCDB0DC0063F54C /* CalculatorViewController.h */,
@@ -135,6 +151,23 @@
 				23187BE01FCDB0DC0063F54C /* Info.plist */,
 			);
 			path = "Equation SolverUITests";
+			sourceTree = "<group>";
+		};
+		2380D84A1FD8A18B0013756A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2380D84B1FD8A18B0013756A /* BEMLine.m */,
+				2380D84C1FD8A18B0013756A /* BEMCircle.h */,
+				2380D84D1FD8A18B0013756A /* BEMSimpleLineGraphView.h */,
+				2380D84E1FD8A18B0013756A /* BEMPermanentPopupView.h */,
+				2380D84F1FD8A18B0013756A /* BEMAverageLine.m */,
+				2380D8501FD8A18B0013756A /* BEMLine.h */,
+				2380D8511FD8A18B0013756A /* BEMPermanentPopupView.m */,
+				2380D8521FD8A18B0013756A /* BEMCircle.m */,
+				2380D8531FD8A18B0013756A /* BEMSimpleLineGraphView.m */,
+				2380D8541FD8A18B0013756A /* BEMAverageLine.h */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,9 +303,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2380D8571FD8A18B0013756A /* BEMPermanentPopupView.m in Sources */,
+				2380D8551FD8A18B0013756A /* BEMLine.m in Sources */,
+				2380D8591FD8A18B0013756A /* BEMSimpleLineGraphView.m in Sources */,
 				23187BBF1FCDB0DC0063F54C /* GraphViewController.m in Sources */,
 				23187BB91FCDB0DC0063F54C /* AppDelegate.m in Sources */,
+				2380D8581FD8A18B0013756A /* BEMCircle.m in Sources */,
 				23187BCA1FCDB0DC0063F54C /* main.m in Sources */,
+				2380D8561FD8A18B0013756A /* BEMAverageLine.m in Sources */,
 				23187BBC1FCDB0DC0063F54C /* CalculatorViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
