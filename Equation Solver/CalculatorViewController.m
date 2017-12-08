@@ -18,7 +18,7 @@
 @synthesize aTextField;
 @synthesize bTextField;
 @synthesize cTextField;
-
+@synthesize scrollView;
 
 
 
@@ -32,6 +32,19 @@
 
 
 }
+
+-(void)textFieldDidBeginEditing:(UITextField *)textField {
+    CGPoint scrollpoint =CGPointMake(0, textField.frame.origin.y);
+    
+    [scrollView setContentOffset:scrollpoint animated:YES];
+}
+
+-(void)textFieldDidEndEditing:(UITextField *)textField {
+    
+    [scrollView setContentOffset:CGPointZero animated:YES];
+}
+
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -63,13 +76,15 @@
     return YES;
 }
 
-
+// Return the textfield when you press return aftr editing
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
     [textField resignFirstResponder];
     return YES;
 }
-    
+
+
+// Return Textfield when you touch outside of the textfield
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
     [self.view endEditing:YES];
@@ -130,7 +145,7 @@
     }
 }
 
-
+// use button to display the results calculated.
 - (IBAction)get_abc:(id)sender {
     
    
@@ -171,8 +186,7 @@
     
         self.RootLabel2.text = [NSString stringWithFormat:@"Root 1 \n %.2lf +%.3lf i",self._Root1,self.Root1ima];
         self.RootLabel1.text = [NSString stringWithFormat:@"Root 2 \n %.2lf %.3lf i",self._Root2,self.Root2ima];
-
-    }
+     }
 }
 
 

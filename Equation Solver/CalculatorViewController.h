@@ -34,6 +34,7 @@
 - (IBAction)get_abc:(id)sender;
 
 
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
 
 

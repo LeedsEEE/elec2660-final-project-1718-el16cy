@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2313944B1FDAC1F700AA339B /* Leeds_University_logo.svg.png in Resources */ = {isa = PBXBuildFile; fileRef = 2313944A1FDAC1F700AA339B /* Leeds_University_logo.svg.png */; };
 		23187BB91FCDB0DC0063F54C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 23187BB81FCDB0DC0063F54C /* AppDelegate.m */; };
 		23187BBC1FCDB0DC0063F54C /* CalculatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23187BBB1FCDB0DC0063F54C /* CalculatorViewController.m */; };
 		23187BBF1FCDB0DC0063F54C /* GraphViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23187BBE1FCDB0DC0063F54C /* GraphViewController.m */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2313944A1FDAC1F700AA339B /* Leeds_University_logo.svg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Leeds_University_logo.svg.png; sourceTree = "<group>"; };
 		23187BB41FCDB0DC0063F54C /* Equation Solver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Equation Solver.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		23187BB71FCDB0DC0063F54C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		23187BB81FCDB0DC0063F54C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				23187BD21FCDB0DC0063F54C /* Equation SolverTests */,
 				23187BDD1FCDB0DC0063F54C /* Equation SolverUITests */,
 				23187BB51FCDB0DC0063F54C /* Products */,
+				2313944A1FDAC1F700AA339B /* Leeds_University_logo.svg.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -276,6 +279,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2313944B1FDAC1F700AA339B /* Leeds_University_logo.svg.png in Resources */,
 				23187BC71FCDB0DC0063F54C /* LaunchScreen.storyboard in Resources */,
 				23187BC41FCDB0DC0063F54C /* Assets.xcassets in Resources */,
 				23187BC21FCDB0DC0063F54C /* Main.storyboard in Resources */,
